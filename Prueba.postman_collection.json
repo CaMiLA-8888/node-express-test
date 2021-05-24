@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "e9d52026-c8e3-4c09-a730-dd2b318fbb55",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prueba",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seller_store\": \"namestore\",\r\n    \"shopping_method\": 2,\r\n    \"external_order_number\": 12345,\r\n    \"buyer_full_name\": \"patricio esponja\",\r\n    \"buyer_phone\": 12345,\r\n    \"buyer-email\": \"a@q.co\",\r\n    \"Shipping_adress\": \"Address\",\r\n    \"shippimg_region\": \"region\",\r\n    \"shipping_country\":\"Colombia\",\r\n    \"line\":[\r\n        {\r\n            \"product_name\": \"productname\",\r\n            \"product_qty\":\"product\",\r\n            \"Product_weight\": 50\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/seller/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"seller",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5002/api/seller/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"seller",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5002/api/seller/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"seller",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
